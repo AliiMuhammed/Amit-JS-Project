@@ -1,4 +1,9 @@
 /* start variables */
+:root {
+    --main-font-color: #fff;
+    --second-font-color: #000000;
+    --third-font-color: #54595f;
+}
 
 /* end variables */
 
@@ -11,10 +16,11 @@
 
 body {
     font-family: 'Barlow Semi Condensed', sans-serif;
+    height: 1000vh;
+
 }
 
 .container {
-    background-color: red;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -23,25 +29,82 @@ body {
 @media screen and (min-width: 768px) {
     .container {
         width: 750px;
-      
+
     }
 }
+
 /* Media query for medium screens  */
 @media screen and (min-width: 992px) {
     .container {
-        width:970px;
-      
+        width: 970px;
+
     }
 }
+
 /* Media query for large screens  */
 
 @media screen and (min-width:1200px) {
     .container {
         width: 1170px;
-      
+
     }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-font-color);
+}
+
+
+/*end glopal rules */
+
+
+/* start nav bar */
+header {
+    background-color: rgb(172, 156, 156);
+
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    position: absolute;
+    z-index: 10000;
+}
+
+nav .logo {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .logo img {
+    width: 100%;
 }
 
 
 
-/*end glopal rules */
+nav .links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+nav .links ul li {
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+/* end nav bar */
