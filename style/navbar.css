@@ -1,0 +1,142 @@
+/* start nav bar */
+
+
+nav {
+
+    padding: 2rem;
+    width: 100%;
+    position: absolute;
+    z-index: 10000;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+
+}
+
+.navbar.scrolled {
+    background-color: #333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar.scrolled .links ul li a {
+    color: var(--main-font-color);
+
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .logo img {
+    width: 100%;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    nav .logo {
+        width: 130px;
+    }
+}
+
+
+
+nav .links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+nav .links ul li {
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+nav .links ul li a {
+    color: #fff;
+}
+
+.nav-btn {
+    display: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.nav-btn:hover {
+    color: var(--main-btn-hover);
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .nav-btn {
+        display: block;
+    }
+
+    nav .links {
+        display: none;
+    }
+
+    nav .links.active {
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        background-color: #fff;
+        width: 100%;
+
+    }
+
+    nav .links.active ul {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    nav .links.active ul li {
+        width: 100%;
+        padding: 0;
+    }
+
+    nav .links.active ul li a {
+        color: var(--main-font-color);
+        width: 100%;
+        display: block;
+        padding: 1rem 2rem;
+        background-color: transparent;
+        transition: var(--main-transition);
+        -webkit-transition: var(--main-transition);
+        -moz-transition: var(--main-transition);
+        -ms-transition: var(--main-transition);
+        -o-transition: var(--main-transition);
+    }
+
+
+    nav .links.active ul li:hover a {
+        color: #fff;
+        background-color: var(--main-font-color);
+    }
+
+}
+
+
+/* end nav bar */

@@ -15,38 +15,51 @@
             rel="stylesheet">
         <!-- font awesome -->
         <link rel="stylesheet" href="style/all.min.css">
+        <!-- import components styles -->
+        <link rel="stylesheet" href="style/navbar.css">
         <title>Document</title>
     </head>
     <body>
         <!-- start nav bar -->
         <header>
-            <nav>
-                <div class="logo">
-                    <img src="images/logos/white logo.png" alt="logo">
+            <nav class="navbar" id="navbar">
+                <div class="container">
+                    <div class="logo">
+                        <img src="images/logos/white logo.png" alt="logo">
+                    </div>
+                    <button id="bars-btn" class="nav-btn"><i
+                            class="fa-solid fa-bars"></i></button>
+                    <button id="close-btn" class="nav-btn"><i
+                            class="fa-solid fa-x"></i></button>
+                    <div class="links">
+                        <ul>
+                            <li><a href="http://" rel="noopener noreferrer">Home</a></li>
+                            <li><a href="http://" rel="noopener noreferrer">Shop</a></li>
+                            <li><a href="http://" rel="noopener noreferrer">lookbook</a></li>
+                            <li><a href="http://" rel="noopener noreferrer">About
+                                    us</a></li>
+                            <li><a href="http://" rel="noopener noreferrer">Contact
+                                    us</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="links">
-                    <ul>
-                        <li><a href="http://"  rel="noopener noreferrer">Home</a></li>
-                        <li><a href="http://"  rel="noopener noreferrer">Shop</a></li>
-                        <li><a href="http://"  rel="noopener noreferrer">lookbook</a></li>
-                        <li><a href="http://"  rel="noopener noreferrer">About us</a></li>
-                        <li><a href="http://"  rel="noopener noreferrer">Contact us</a></li>
-                    </ul>
-                </div>
+
             </nav>
         </header>
         <!-- end nav bar -->
         <!-- start landing section -->
-            <section class="landing-section" style="background-color: rebeccapurple;">
-                <div class="slider">
-                    <div class="container" style="height: 100vh; display: flex;
+        <section class="landing-section"
+            style="background-color: rebeccapurple;">
+            <div class="slider">
+                <div class="container" style="height: 100vh; display: flex;
                     align-items: center;
                     justify-content: center; ">
-                        a7a
-                    </div>
+                    a7a
                 </div>
-            </section>
+            </div>
+        </section>
         <!-- end landing section -->
         <script src="js/main.js"></script>
+        <script src="js/navbar.js"></script>
     </body>
 </html>

@@ -1,8 +1,10 @@
 /* start variables */
 :root {
-    --main-font-color: #fff;
+    --main-font-color: #8e43f0;
     --second-font-color: #000000;
     --third-font-color: #54595f;
+    --main-btn-hover:#afafaf;
+    --main-transition: all 0.3s ease-in-out;
 }
 
 /* end variables */
@@ -58,53 +60,10 @@ ul {
 
 a {
     text-decoration: none;
-    color: var(--main-font-color);
+
 }
 
 
 /*end glopal rules */
 
 
-/* start nav bar */
-header {
-    background-color: rgb(172, 156, 156);
-
-}
-
-nav {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    padding: 1rem 2rem;
-    width: 100%;
-    position: absolute;
-    z-index: 10000;
-}
-
-nav .logo {
-    width: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-nav .logo img {
-    width: 100%;
-}
-
-
-
-nav .links ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
-nav .links ul li {
-    padding: 0 1rem;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-}
-
-/* end nav bar */
