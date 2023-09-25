@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- main css links -->
         <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/Home.css">
         <!-- normalize all elements -->
         <link rel="stylesheet" href="style/normalize.css">
         <!-- google fonts -->
@@ -16,7 +17,14 @@
         <!-- font awesome -->
         <link rel="stylesheet" href="style/all.min.css">
         <!-- import components styles -->
+        <!-- nav bar -->
         <link rel="stylesheet" href="style/navbar.css">
+        <!-- landing slider -->
+
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="style/landingSlider.css">
         <title>Document</title>
     </head>
     <body>
@@ -48,18 +56,45 @@
         </header>
         <!-- end nav bar -->
         <!-- start landing section -->
-        <section class="landing-section"
-            style="background-color: rebeccapurple;">
+        <section class="landing-section">
             <div class="slider">
-                <div class="container" style="height: 100vh; display: flex;
-                    align-items: center;
-                    justify-content: center; ">
-                    a7a
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img
+                                src="images/Home slider/1.jpg" alt></div>
+                        <div class="swiper-slide"><img
+                                src="images/Home slider/2.jpg" alt></div>
+                        <div class="swiper-slide"><img
+                                src="images/Home slider/3.jpg" alt></div>
+                        <div class="swiper-slide"><img
+                                src="images/Home slider/4.jpg" alt></div>
+                        <div class="swiper-slide"><img
+                                src="images/Home slider/5.jpg" alt></div>
+                        <div class="swiper-slide"><img
+                                src="images/Home slider/6.jpg" alt></div>
+                    </div>
                 </div>
+            </div>
+            <div class="container">
+                <div class="content">
+                    <h5>Summer Collection</h5>
+                    <h1>INTRODUCING NEW ARRIVALS</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
+                        dapibus leo.</p>
+                    <a href="#" class="main-btn">View collection</a>
+                </div>
+
             </div>
         </section>
         <!-- end landing section -->
         <script src="js/main.js"></script>
         <script src="js/navbar.js"></script>
+        <!-- Swiper JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="js/landingSlider.js"></script>
+
     </body>
 </html>
