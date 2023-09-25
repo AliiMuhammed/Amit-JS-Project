@@ -9,7 +9,6 @@ nav {
     z-index: 10000;
     background-color: transparent;
     transition: background-color 0.3s ease;
-
 }
 
 .navbar.scrolled {
@@ -29,7 +28,7 @@ nav .container {
 }
 
 nav .logo {
-    width: 150px;
+    width: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,14 +58,24 @@ nav .links ul li {
     padding: 0 1rem;
     font-size: 1.5rem;
     text-transform: uppercase;
+    font-weight: 300;
 }
 
 nav .links ul li a {
     color: #fff;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+nav .links ul li a:hover{
+    color: var(--main-btn-hover);
 }
 
+
+
 .nav-btn {
-    display: none;
     background-color: transparent;
     outline: none;
     border: none;
@@ -88,10 +97,6 @@ nav .links ul li a {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
-    .nav-btn {
-        display: block;
-    }
-
     nav .links {
         display: none;
     }
