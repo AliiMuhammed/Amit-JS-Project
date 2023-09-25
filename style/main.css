@@ -6,7 +6,10 @@
     --main-btn-hover: #afafaf;
     --main-transition: all 0.3s ease-in-out;
 }
-
+::selection {
+    color: #fff;
+    background: var(--main-font-color);
+}
 /* end variables */
 
 /*Start glopal rules */
@@ -102,5 +105,7 @@ a {
         margin: 0 auto;
     }
 }
-
+section{
+    margin: 3rem 0;
+}
 /*end glopal rules */
