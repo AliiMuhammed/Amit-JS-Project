@@ -1,5 +1,5 @@
 var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 0,
+  spaceBetween: 10,
   loop: true,
   effect: "fade",
   centeredSlides: true,
