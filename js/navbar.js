@@ -1,16 +1,16 @@
-// const navbar = document.getElementById("navbar");
+const navbar = document.getElementById("navbar");
 
-// window.addEventListener("scroll", () => {
-//   // Get the current scroll position
-//   const scrollY = window.scrollY;
+window.addEventListener("scroll", () => {
+  // Get the current scroll position
+  const scrollY = window.scrollY;
 
-//   // Add the 'scrolled' class to the navbar when scrolled down 100vh
-//   if (scrollY >= window.innerHeight - 100) {
-//     navbar.classList.add("scrolled");
-//   } else {
-//     navbar.classList.remove("scrolled");
-//   }
-// });
+  // Add the 'scrolled' class to the navbar when scrolled down 100vh
+  if (scrollY >= window.innerHeight - 100) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
 
 const navbarBtnShow = document.getElementById("bars-btn");
 const navbarBtnClose = document.getElementById("close-btn");

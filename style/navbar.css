@@ -5,21 +5,20 @@ nav {
 
     padding: 2rem;
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 10000;
     background-color: transparent;
     transition: background-color 0.3s ease;
+
 }
 
 .navbar.scrolled {
-    background-color: #333;
+    background-color: var(--main-font-color);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    bottom: 0%;
 }
 
-.navbar.scrolled .links ul li a {
-    color: var(--main-font-color);
 
-}
 
 nav .container {
     display: flex;
@@ -69,7 +68,8 @@ nav .links ul li a {
     -ms-transition: var(--main-transition);
     -o-transition: var(--main-transition);
 }
-nav .links ul li a:hover{
+
+nav .links ul li a:hover {
     color: var(--main-btn-hover);
 }
 
@@ -109,6 +109,11 @@ nav .links ul li a:hover{
         background-color: #fff;
         width: 100%;
 
+    }
+
+    .navbar.scrolled .links.active {
+        top: auto;
+        bottom: 100%;
     }
 
     nav .links.active ul {
