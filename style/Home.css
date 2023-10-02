@@ -509,12 +509,32 @@
     width: 100%;
     gap: 3rem 1rem;
 }
+@media only screen and (max-width: 767px) {
+    .products-section .container .products-cards {
+        
+        grid-template-columns:  1fr;
 
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .products-section .container .products-cards {
+        
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}
 /* end products section */
 
 /* start card */
-.card {}
-
+@media only screen and (max-width: 767px) {
+    .card  {
+        
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+}
 .card .img-product {
     width: 100%;
     height: 250px;
@@ -532,7 +552,13 @@
     overflow: hidden;
     border: 1px dashed transparent;
 }
-
+@media only screen and (max-width: 767px) {
+    .card .img-product {
+        
+        height: 50vh;
+        
+    }
+}
 .card .img-product:hover {
     border: 1px dashed var(--main-font-color);
 
