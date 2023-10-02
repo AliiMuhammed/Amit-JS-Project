@@ -105,7 +105,7 @@
 /* start collection section */
 .collection {
     padding: 0 2rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1.2fr;
 }
 
 @media only screen and (max-width: 992px) {
@@ -120,8 +120,6 @@
     display: grid;
     gap: 2rem;
 }
-
-
 .collection .right .top {
     grid-template-columns: repeat(2, 1fr);
 }
@@ -255,6 +253,7 @@
     justify-content: center;
     color: #fff;
     padding: 0 4rem;
+
 }   
 
 @media only screen and (max-width: 767px) {
