@@ -503,6 +503,13 @@
     margin-bottom: 4rem;
 }
 
+@media only screen and (max-width: 767px) {
+    .products-section .container .main-header {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
 .products-section .container .products-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -702,25 +709,61 @@ footer {
     color: #fff;
 }
 
-footer .footer-top .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 4rem;
-    
+footer .footer-top {
+    padding: 2rem;
 }
-footer .footer-top .container .logo img{
+
+footer .footer-top .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+footer .footer-top .container .logo {
+    width: 30%;
+}
+
+footer .footer-top .container .logo p {
+    line-height: 1.5;
+}
+
+footer .footer-top .container .logo img {
     margin-bottom: 1rem;
 }
-footer .footer-top .container .shop-collections-links{
+
+footer .footer-top .container .shop-collections-links,
+footer .footer-top .container .fast-links {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-footer .footer-top .container .shop-collections-links h1{
+
+footer .footer-top .container .shop-collections-links h1,
+footer .footer-top .container .fast-links h1 {
     margin: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-weight: 400;
 }
+
+footer .footer-top .container .shop-collections-links a,
+footer .footer-top .container .fast-links a {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #fff;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+footer .footer-top .container .shop-collections-links a:hover,
+footer .footer-top .container .fast-links a:hover {
+    padding-left: 0.5rem;
+    color: var(--main-font-color);
+}
+
 
 footer .footer-bottom {
     padding: 2rem 0;
@@ -752,6 +795,34 @@ footer .footer-bottom .social-media-icons a:hover {
 
 footer .footer-bottom .social-media-icons a:not(:last-child) {
     margin-right: 1rem;
+}
+
+
+@media only screen and (max-width: 767px) {
+    footer .footer-top {
+        padding-bottom: 0;
+    }
+
+    footer .footer-bottom .container,
+    footer .footer-top .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .footer-top .container .logo {
+        width: 100%;
+    }
+
+    footer .footer-top .container .shop-collections-links,
+    footer .footer-top .container .fast-links {
+        align-items: center;
+    }
+
+    footer .footer-bottom .social-media-icons,
+    footer .footer-bottom .copy-rights {
+        margin-bottom: 0.7rem;
+    }
 }
 
 /* end footer */
