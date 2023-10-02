@@ -663,6 +663,25 @@
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    cursor: pointer;
+}
+
+.feature-section .container .features-card:hover {
+    transform: translateY(-7%);
+    -webkit-transform: translateY(-7%);
+    -moz-transform: translateY(-7%);
+    -ms-transform: translateY(-7%);
+    -o-transform: translateY(-7%);
 }
 
 .feature-section .container .features-card span {
@@ -677,11 +696,62 @@
 /* end features section */
 
 /* start footer */
-footer{
-    padding: 4rem 0;
+footer {
+    padding-top: 4rem;
     background-color: #150E1F;
     color: #fff;
-    font-size: 3rem;
-    text-align: center;
 }
+
+footer .footer-top .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    
+}
+footer .footer-top .container .logo img{
+    margin-bottom: 1rem;
+}
+footer .footer-top .container .shop-collections-links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+footer .footer-top .container .shop-collections-links h1{
+    margin: 0;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+footer .footer-bottom {
+    padding: 2rem 0;
+    color: var(--second-font-color);
+    background-color: #fff;
+    margin-top: 2rem;
+
+
+}
+
+footer .footer-bottom .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .footer-bottom .social-media-icons a {
+    color: var(--main-font-color);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+footer .footer-bottom .social-media-icons a:hover {
+    color: #7236c0;
+}
+
+footer .footer-bottom .social-media-icons a:not(:last-child) {
+    margin-right: 1rem;
+}
+
 /* end footer */
