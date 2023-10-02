@@ -4,7 +4,7 @@ var swiper = new Swiper(".mySwiper", {
   effect: "fade",
   centeredSlides: true,
   autoplay: {
-    delay:6000,
+    delay: 6000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -15,4 +15,23 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+
+var productsSwiper = new Swiper(".products", {
+  cssMode: true,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 6000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  mousewheel: true,
+  keyboard: true,
 });

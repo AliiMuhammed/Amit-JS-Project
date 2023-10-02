@@ -5,6 +5,7 @@
     --third-font-color: #54595f;
     --main-btn-hover: #afafaf;
     --main-transition: all 0.3s ease-in-out;
+    --swiper-theme-color: #8e43f0 !important;
 }
 
 ::selection {

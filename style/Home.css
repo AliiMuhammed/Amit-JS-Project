@@ -535,13 +535,23 @@
 
 /* end products section */
 
+/* start products slider */
+.products-slider {
+    height: 65vh;
+}
+
+.products-slider .container {
+    height: 100%;
+}
+
+
+/* end products slider */
+
 /* start card */
 @media only screen and (max-width: 767px) {
     .card {
-
         width: 90%;
         margin: 0 auto;
-
     }
 }
 
