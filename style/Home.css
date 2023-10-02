@@ -18,7 +18,6 @@
     background-color: transparent;
     opacity: .8;
     background-image: linear-gradient(180deg, #584D66 0%, #150E1F 100%);
-    ;
     top: 0;
     z-index: 100;
 }
@@ -120,6 +119,7 @@
     display: grid;
     gap: 2rem;
 }
+
 .collection .right .top {
     grid-template-columns: repeat(2, 1fr);
 }
@@ -136,13 +136,15 @@
     width: 100%;
     height: 100%;
 }
-.collection .right .bottom{
+
+.collection .right .bottom {
     height: 435px;
     width: 100%;
 }
+
 @media only screen and (max-width: 767px) {
-    .collection .right .bottom{
-        height: 235px;  
+    .collection .right .bottom {
+        height: 235px;
     }
 }
 
@@ -236,16 +238,17 @@
     background-image: linear-gradient(180deg, #8E43F0 0%, #4B4F58 100%);
     opacity: .69;
 }
+
 .collection .right .bottom .content {
     position: absolute;
     z-index: 102;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
     display: flex;
@@ -254,35 +257,38 @@
     color: #fff;
     padding: 0 4rem;
 
-}   
+}
 
 @media only screen and (max-width: 767px) {
-    .collection .right .bottom .content{
+    .collection .right .bottom .content {
         padding: 0 1rem;
         text-align: center;
     }
 }
-.collection .right .bottom .content h1{
+
+.collection .right .bottom .content h1 {
     margin: 0;
     margin-bottom: 2rem;
     font-size: 3rem;
     font-weight: 300;
-    letter-spacing:3px;
+    letter-spacing: 3px;
 }
+
 @media only screen and (max-width: 767px) {
-    .collection .right .bottom .content h1{
-        margin-bottom:1.5rem;
+    .collection .right .bottom .content h1 {
+        margin-bottom: 1.5rem;
         font-size: 2rem;
     }
 }
-.collection .right .bottom .content p{
+
+.collection .right .bottom .content p {
     margin: 0;
     margin-bottom: 2rem;
     font-size: 1.8rem;
 }
 
 @media only screen and (max-width: 767px) {
-    .collection .right .bottom .content p{
+    .collection .right .bottom .content p {
         margin: 0;
         margin-bottom: 1rem;
         font-size: 1.3rem;
@@ -291,3 +297,45 @@
 
 
 /* end collection section */
+
+/* start quote section */
+.quote-section {
+    margin-top: 6rem;
+}
+
+.quote-section .container {}
+
+.quote-section .container .quote-sign {
+    font-size: 3.5rem;
+    color: var(--main-font-color);
+}
+
+.quote-section .container .quote {
+    font-size: 2rem;
+    width: 75%;
+    line-height: 1.3;
+}
+
+.quote-section .container .author {
+    width: 100%;
+}
+
+.quote-section .container .author>span {
+    width: 25%;
+
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.quote-section .container .author>span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 70%;
+    height: 1px;
+    border-top: 1px dashed var(--main-font-color);
+}
+
+/* end quote section */
