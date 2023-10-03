@@ -5,7 +5,7 @@ window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
 
   // Add the 'scrolled' class to the navbar when scrolled down 100vh
-  if (scrollY >= window.innerHeight - 100) {
+  if (scrollY >= window.innerHeight - 0) {
     navbar.classList.add("scrolled");
   } else {
     navbar.classList.remove("scrolled");
