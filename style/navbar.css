@@ -111,10 +111,10 @@ nav .links ul li a:hover {
 
     }
 
-    .navbar.scrolled .links.active {
+    /* .navbar.scrolled .links.active {
         top: auto;
         bottom: 100%;
-    }
+    } */
 
     nav .links.active ul {
         flex-direction: column;
