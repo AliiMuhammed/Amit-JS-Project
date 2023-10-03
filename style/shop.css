@@ -1,0 +1,37 @@
+/* start shop section */
+body {
+    background-color: #f3f1f6
+}
+
+.shop-section {
+    margin-top: 10rem;
+  
+}
+
+.shop-section .container {
+    background-color: #fff;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+@media only screen and (max-width: 767px) {
+    .shop-section .container {
+        padding: 2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .shop-section .container {
+        padding: 3rem;
+    }
+}
+.shop-section .container .shop-header {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: var(--main-font-color);
+    
+}
+
+
+/* end shop section */

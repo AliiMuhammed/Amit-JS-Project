@@ -1,0 +1,124 @@
+/* start footer */
+footer {
+    padding-top: 4rem;
+    background-color: #150E1F;
+    color: #fff;
+}
+
+footer .footer-top {
+    padding: 2rem;
+}
+
+footer .footer-top .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+footer .footer-top .container .logo {
+    width: 30%;
+}
+
+footer .footer-top .container .logo p {
+    line-height: 1.5;
+}
+
+footer .footer-top .container .logo img {
+    margin-bottom: 1rem;
+}
+
+footer .footer-top .container .shop-collections-links,
+footer .footer-top .container .fast-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer .footer-top .container .shop-collections-links h1,
+footer .footer-top .container .fast-links h1 {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+footer .footer-top .container .shop-collections-links a,
+footer .footer-top .container .fast-links a {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #fff;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+footer .footer-top .container .shop-collections-links a:hover,
+footer .footer-top .container .fast-links a:hover {
+    padding-left: 0.5rem;
+    color: var(--main-font-color);
+}
+
+
+footer .footer-bottom {
+    padding: 2rem 0;
+    color: var(--second-font-color);
+    background-color: #fff;
+    margin-top: 2rem;
+
+
+}
+
+footer .footer-bottom .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .footer-bottom .social-media-icons a {
+    color: var(--main-font-color);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+footer .footer-bottom .social-media-icons a:hover {
+    color: #7236c0;
+}
+
+footer .footer-bottom .social-media-icons a:not(:last-child) {
+    margin-right: 1rem;
+}
+
+
+@media only screen and (max-width: 767px) {
+    footer .footer-top {
+        padding-bottom: 0;
+    }
+
+    footer .footer-bottom .container,
+    footer .footer-top .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .footer-top .container .logo {
+        width: 100%;
+    }
+
+    footer .footer-top .container .shop-collections-links,
+    footer .footer-top .container .fast-links {
+        align-items: center;
+    }
+
+    footer .footer-bottom .social-media-icons,
+    footer .footer-bottom .copy-rights {
+        margin-bottom: 0.7rem;
+    }
+}
+
+/* end footer */

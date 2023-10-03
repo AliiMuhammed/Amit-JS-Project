@@ -9,13 +9,20 @@ nav {
     z-index: 10000;
     background-color: transparent;
     transition: background-color 0.3s ease;
+    top: 0%;
+}
 
+.navbar.second-nav {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 46px 300px -49px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 46px 300px -49px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 46px 300px -49px rgba(0, 0, 0, 0.75);
 }
 
 .navbar.scrolled {
     background-color: var(--main-font-color);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    
+
 }
 
 
@@ -69,8 +76,16 @@ nav .links ul li a {
     -o-transition: var(--main-transition);
 }
 
+.navbar.second-nav .links ul li a {
+    color: var(--main-font-color);
+}
+
 nav .links ul li a:hover {
     color: var(--main-btn-hover);
+}
+
+.navbar.second-nav .links ul li a:hover {
+    color: var(--second-font-color);
 }
 
 
@@ -89,8 +104,18 @@ nav .links ul li a:hover {
     -o-transition: var(--main-transition);
 }
 
+.navbar.second-nav .nav-btn {
+    color: var(--main-font-color);
+}
+
+
 .nav-btn:hover {
     color: var(--main-btn-hover);
+}
+
+.navbar.second-nav .nav-btn:hover {
+    color: var(--second-btn-hover);
+
 }
 
 
@@ -122,6 +147,11 @@ nav .links ul li a:hover {
 
     }
 
+    .navbar.second-nav .links.active ul {
+
+        background-color: var(--main-font-color);
+    }
+
     nav .links.active ul li {
         width: 100%;
         padding: 0;
@@ -140,12 +170,19 @@ nav .links ul li a:hover {
         -o-transition: var(--main-transition);
     }
 
+    .navbar.second-nav .links.active ul li a {
+        color: #fff;
+    }
 
     nav .links.active ul li:hover a {
         color: #fff;
         background-color: var(--main-font-color);
     }
 
+    .navbar.second-nav .links.active ul li:hover a {
+        background-color: #fff;
+        color: var(--second-font-color);
+    }
 }
 
 
