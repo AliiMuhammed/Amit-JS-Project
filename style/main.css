@@ -267,7 +267,7 @@ section {
         margin: 2rem;
     }
 }
-.shop-section .container .products-cards .products{
+ .products-cards .products{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 2rem;
