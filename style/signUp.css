@@ -1,42 +1,42 @@
-.login-section {
-    height: 50vh;
+.signUp-section {
+    height: 70vh;
     margin-top: 10rem;
 }
 
 @media only screen and (max-width: 767px) {
-    .login-section {
-        height: 70vh;
+    .signUp-section {
+        height: 100vh;
         margin-top: 8rem;
     }
 }
 
-.login-section .container {
+.signUp-section .container {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.login-section .container .login-form {
+.signUp-section .container .signUp-form {
     width: 50%;
     background-color: var(--main-font-color);
     height: 100%;
     display: flex;
-    align-items: center;
+
     justify-content: space-around;
     flex-direction: column;
     padding: 3rem;
 }
 
 @media only screen and (max-width: 767px) {
-    .login-section .container .login-form {
+    .signUp-section .container .signUp-form {
         width: 100%;
         height: 85%;
-        padding: 1rem;
+        padding: 1.5rem;
     }
 }
 
-.login-section .container .login-form input:not(input[type="submit"]) {
+.signUp-section .container .signUp-form input:not(input[type="submit"]) {
     padding: 1rem;
     width: 100%;
     border: 2px solid transparent;
@@ -54,16 +54,23 @@
     -moz-border-radius: 7px;
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
+
+}
+
+.signUp-section .container .signUp-form label {
+    font-size: 1.5rem;
+    color: #fff;
+
 }
 
 @media only screen and (max-width: 767px) {
-    .login-section .container .login-form input:not(input[type="submit"]) {
+    .signUp-section .container .signUp-form input:not(input[type="submit"]) {
         padding: 0.6rem;
 
     }
 }
 
-.login-section .container .login-form input:not(input[type="submit"])::placeholder {
+.signUp-section .container .signUp-form input:not(input[type="submit"])::placeholder {
     color: #fff;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
@@ -72,29 +79,34 @@
     -o-transition: var(--main-transition);
 }
 
-.login-section .container .login-form input:not(input[type="submit"]):focus {
+.signUp-section .container .signUp-form input:not(input[type="submit"]):focus {
     border-color: #ae70ff;
     background-color: #fff;
 }
 
-.login-section .container .login-form input:not(input[type="submit"]):focus::placeholder {
+.signUp-section .container .signUp-form input:not(input[type="submit"]):focus::placeholder {
     color: var(--second-font-color);
 }
 
-.login-section .container .login-form .login-logo {
+.signUp-section .container .signUp-form input[type="file"] {
+    color: #fff9 !important;
+    cursor: pointer;
+}
 
+.signUp-section .container .signUp-form .signUp-logo {
+    margin: 0 auto;
     width: 40%;
 
 }
 
 @media only screen and (max-width: 767px) {
-    .login-section .container .login-form .login-logo {
+    .signUp-section .container .signUp-form .signUp-logo {
 
         width: auto;
     }
 }
 
-.login-section .container .login-form .main-btn.login-btn {
+.signUp-section .container .signUp-form .main-btn.signUp-btn {
     width: 100%;
     outline: none;
     border: none;
@@ -118,7 +130,7 @@
     }
 }
 
-.login-section .container .login-form a {
+.signUp-section .container .signUp-form a {
     color: #fff;
     font-size: 1.5rem;
     transition: var(--main-transition);
@@ -126,8 +138,23 @@
     -moz-transition: var(--main-transition);
     -ms-transition: var(--main-transition);
     -o-transition: var(--main-transition);
+    text-align: center;
 }
 
-.login-section .container .login-form a:hover {
+.signUp-section .container .signUp-form a:hover {
     color: #fff9;
+    cursor: pointer;
+}
+
+.signUp-form ::-webkit-file-upload-button {
+    border: none;
+    background-color: var(--main-font-color);
+    color: #fff;
+    margin-right: 1rem;
+    padding: 0.2rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
 }

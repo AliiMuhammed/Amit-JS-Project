@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- main css links -->
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/signUp.css">
     <!-- normalize all elements -->
     <link rel="stylesheet" href="style/normalize.css">
     <!-- google fonts -->
@@ -27,7 +27,7 @@
 
 
     <link rel="icon" href="images/logos/tap.ico">
-    <title>Brandstore | Login</title>
+    <title>Brandstore | Sign Up</title>
 </head>
 
 <body>
@@ -49,6 +49,11 @@
                                 us</a></li>
                         <li><a href="" rel="">Contact
                                 us</a></li>
+                        <div class="icons-navbar">
+                            <li><a href="./signUp.html" rel="" title="Login"><i
+                                        class="fa-solid fa-right-to-bracket"></i></a></li>
+                            </li>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -56,14 +61,17 @@
         </nav>
     </header>
     <!-- end nav bar -->
-    <section class="login-section">
+    <section class="signUp-section">
         <div class="container">
-            <form action="" class="login-form">
-                <img src="./images/logos/white logo.png" alt="" class="login-logo">
+            <form action="" class="signUp-form">
+                <img src="./images/logos/white logo.png" alt="" class="signUp-logo">
                 <input type="text" placeholder="User Name" name="userName" id="userName">
+                <input type="email" placeholder="Email" name="userName" id="userEmail">
                 <input type="password" placeholder="Password" name="password" id="pass">
-                <input type="submit" value="Login" class="main-btn login-btn" id="login-btn">
-                <a href="./signUp.html">Do not have account?</a>
+                <label for="userImg">Image</label>
+                <input type="file"  name="userImg" id="userImg">
+                <input type="submit" value="Sign up" class="main-btn signUp-btn" id="signUp-btn">
+                <a href="./login.html">Do you have account?</a>
             </form>
         </div>
     </section>
