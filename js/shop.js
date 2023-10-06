@@ -11,6 +11,7 @@ async function fetchProductsMens() {
     const mainHeader = document.createElement("h1");
     mainHeader.classList.add("main-header");
     mainHeader.innerHTML = "men's shirts";
+    mainHeader.id = "menShirts";
     const productsCardsContainer = document.querySelector(".products-cards");
 
     const productsContainer = document.createElement("div");
@@ -59,6 +60,7 @@ async function fetchProductsMens() {
     const mainHeader = document.createElement("h1");
     mainHeader.classList.add("main-header");
     mainHeader.innerHTML = "men's shoes";
+    mainHeader.id = "menShoes";
     const productsCardsContainer = document.querySelector(".products-cards");
 
     const productsContainer = document.createElement("div");
@@ -105,6 +107,7 @@ async function fetchProductsMens() {
     const mainHeader = document.createElement("h1");
     mainHeader.classList.add("main-header");
     mainHeader.innerHTML = "men's watches";
+    mainHeader.id="menWatches"
     const productsCardsContainer = document.querySelector(".products-cards");
 
     const productsContainer = document.createElement("div");
@@ -154,6 +157,7 @@ async function fetchProductsWomens() {
     const mainHeader = document.createElement("h1");
     mainHeader.classList.add("main-header");
     mainHeader.innerHTML = "women's dresses";
+    mainHeader.id = "womenDresses";
     const productsCardsContainer = document.querySelector(".products-cards");
 
     const productsContainer = document.createElement("div");
@@ -295,6 +299,7 @@ async function fetchSunglasses() {
     const mainHeader = document.createElement("h1");
     mainHeader.classList.add("main-header");
     mainHeader.innerHTML = "sunglasses";
+    mainHeader.id = "Sunglasses";
     const productsCardsContainer = document.querySelector(".products-cards");
 
     const productsContainer = document.createElement("div");
