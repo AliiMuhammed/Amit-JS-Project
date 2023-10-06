@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- main css links -->
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/profile.css">
     <!-- normalize all elements -->
     <link rel="stylesheet" href="style/normalize.css">
     <!-- google fonts -->
@@ -22,12 +22,13 @@
     <link rel="stylesheet" href="style/navbar.css">
     <!-- footer -->
     <link rel="stylesheet" href="style/footer.css">
+    <!-- landing slider -->
 
-
-
-
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style/landingSlider.css">
+    <title>Brandstore</title>
     <link rel="icon" href="images/logos/tap.ico">
-    <title>Brandstore | Login</title>
 </head>
 
 <body>
@@ -51,7 +52,7 @@
                                 us</a></li>
                         <div class="icons-navbar">
                             <li id="login-icon"><a href="./login.html">Login</a></li>
-                            <li id="logout-icon"> <button  title="logout"><i
+                            <li id="logout-icon"> <button title="logout"><i
                                         class="fa-solid fa-right-to-bracket"></i></button></li>
                             <li id="profile-icon"><a href="./profile.html" rel="" title="profile"><i
                                         class="fa-solid fa-user"></i></a>
@@ -64,18 +65,19 @@
         </nav>
     </header>
     <!-- end nav bar -->
-    <section class="login-section">
+    <!-- start porfile section -->
+    <section class="profile-section">
         <div class="container">
-            <form class="login-form">
-                <img src="./images/logos/white logo.png" alt="" class="login-logo">
-                <p id="errorMessage"></p>
-                <input type="text" placeholder="User Name" name="userName" id="userName">
-                <input type="password" placeholder="Password" name="password" id="pass">
-                <input type="submit" value="Login" class="main-btn login-btn" id="login-btn">
-                <a href="./signUp.html">Do not have account?</a>
-            </form>
+            <div class="profile-card">
+                <div class="profile-img"></div>
+                <div class="userName"></div>
+                <div class="userEmail">Email:<span></span></div>
+                <div class="TimeLogin">Login at:<span></span></div>
+
+            </div>
         </div>
     </section>
+    <!-- end porfile section -->
     <!-- start footer -->
     <footer>
         <div class="footer-top">
@@ -124,13 +126,15 @@
         </div>
     </footer>
     <!-- end footer -->
+
     <!-- scroll to top btn -->
     <button class="scrollToTop" id="scroll-to-top">
         <i class="fa-solid fa-arrow-up"></i>
     </button>
-    <script src="js/login.js"></script>
-    <script src="js/authUserLogic.js"></script>
+    <!-- js files -->
     <script src="js/main.js"></script>
+    <script src="js/authUserLogic.js"></script>
+    <script src="js/profile.js"></script>
     <script src="js/scroll.js"></script>
 </body>
 

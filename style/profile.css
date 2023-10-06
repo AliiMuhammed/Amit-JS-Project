@@ -1,0 +1,74 @@
+.profile-section {
+    height: 70vh;
+    margin-top: 8rem;
+}
+
+.profile-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.profile-section .container .profile-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--main-font-color);
+    color: #fff;
+    flex-direction: column;
+    width: 50%;
+    height: 80%;
+    padding: 2rem;
+    font-size: 1.9rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.profile-section .container .profile-card .userName{
+    font-weight: 600;
+    font-size: 3rem;
+}
+.profile-section .container .profile-card span{
+    margin-left: 0.3rem;
+}
+.profile-section .container .profile-card .profile-img {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .profile-section .container .profile-card {
+
+       width: 85%;
+       font-size: 1.3rem;
+       padding: 1rem;
+    }
+    .profile-section .container .profile-card .profile-img{
+        width: 150px;
+        height: 150px;
+    }
+    .profile-section .container .profile-card .userName{
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .profile-section .container .profile-card {
+
+        
+        font-size: 1.3rem;
+     }
+}

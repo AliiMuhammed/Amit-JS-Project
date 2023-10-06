@@ -118,7 +118,31 @@ nav .links ul li a:hover {
 
 }
 
+#logout-icon button {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
 
+.navbar.second-nav #logout-icon button {
+    color: var(--main-font-color);
+}
+
+.navbar.second-nav #logout-icon button:hover {
+    color: var(--second-font-color);
+}
+
+.navbar #logout-icon button:hover {
+    color: var(--main-btn-hover);
+
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
@@ -136,10 +160,7 @@ nav .links ul li a:hover {
 
     }
 
-    /* .navbar.scrolled .links.active {
-        top: auto;
-        bottom: 100%;
-    } */
+
 
     nav .links.active ul {
         flex-direction: column;
@@ -183,24 +204,15 @@ nav .links ul li a:hover {
         background-color: #fff;
         color: var(--second-font-color);
     }
+
+    #logout-icon button {
+        color: var(--main-font-color);
+    }
+    .navbar.second-nav #logout-icon button {
+        color: #fff;
+    }
 }
 
-#logout-icon {
-    background: transparent;
-    border: none;
-    outline: none;
-    color: #fff;
-    cursor: pointer;
-    transition: var(--main-transition);
-    -webkit-transition: var(--main-transition);
-    -moz-transition: var(--main-transition);
-    -ms-transition: var(--main-transition);
-    -o-transition: var(--main-transition);
-}
 
-#logout-icon:hover {
-    color: var(--main-btn-hover);
-
-}
 
 /* end nav bar */
