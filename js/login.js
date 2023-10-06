@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
       localStorage.setItem("loggedInUser", JSON.stringify(loggedInUser));
 
       // Redirect to a logged-in page (e.g., dashboard.html) upon successful login
-      window.location.href = "/index.html"; // Update the URL as needed
+      window.location.href = "./index.html"; // Update the URL as needed
     } else {
       // User not found, display an error message or take appropriate action
       errorMessage.style.display = "block";

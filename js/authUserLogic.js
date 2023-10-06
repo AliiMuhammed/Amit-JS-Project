@@ -12,5 +12,5 @@ if (JSON.parse(localStorage.getItem("loggedInUser"))) {
 logoutBtn.addEventListener("click", () => {
   localStorage.removeItem("loggedInUser");
   // Navigate to index.html and reload the page
-  window.location.href = "/index.html";
+  window.location.href = "./index.html";
 });
