@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
       localStorage.setItem("loggedInUser", JSON.stringify(loggedInUser));
 
       // Redirect to a logged-in page (e.g., dashboard.html) upon successful login
-      window.location.assign("/index.html");
+      window.location.assign("/Amit-JS-Project/index.html");
     } else {
       // User not found, display an error message or take appropriate action
       errorMessage.style.display = "block";
