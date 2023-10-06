@@ -288,4 +288,30 @@ section {
 
     } 
 }
+
+.main-btn.login-btn{
+    color: var(--second-font-color);
+    cursor: pointer;
+}
+.main-btn.login-btn:hover{
+    color: var(--main-font-color);
+}
+
+@media only screen and (max-width: 992px) {
+    .main-btn.login-btn{
+        color: var(--second-font-color);
+        cursor: pointer;
+    }
+}
+
+.icons-navbar{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+@media only screen and (max-width: 992px) {
+    .icons-navbar{
+       width: 100%;
+    }
+}
 /*end glopal rules */
