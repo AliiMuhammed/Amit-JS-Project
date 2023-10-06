@@ -36,7 +36,7 @@
 
     <!-- start nav bar -->
     <header>
-        <nav class="navbar second-nav">
+        <nav class="navbar second-nav" id="navbar">
             <div class="container">
                 <div class="logo">
                     <img src="images/logos/black logo.png" alt="logo">
@@ -45,13 +45,21 @@
                 <button id="close-btn" class="nav-btn"><i class="fa-solid fa-x"></i></button>
                 <div class="links">
                     <ul>
-                        <li><a href="/index.html" rel="">Home</a></li>
-                        <li><a href="/shop.html" rel="">Shop</a></li>
+                        <li><a href="./index.html" rel="">Home</a></li>
+                        <li><a href="./shop.html" rel="">Shop</a></li>
                         <li><a href="" rel="">lookbook</a></li>
                         <li><a href="" rel="">About
                                 us</a></li>
                         <li><a href="" rel="">Contact
                                 us</a></li>
+                        <div class="icons-navbar">
+                            <li><a href="./login.html" id="login-icon">Login</a></li>
+                            <li> <button id="logout-icon" title="logout"><i
+                                        class="fa-solid fa-right-to-bracket"></i></button></li>
+                            <li><a href="./login.html" id="profile-icon" rel="" title="profile"><i
+                                        class="fa-solid fa-user"></i></a>
+                            </li>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -168,6 +176,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- js files -->
     <script src="js/main.js"></script>
+    <script src="js/authUserLogic.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/product-details.js"></script>
 </body>

@@ -185,5 +185,22 @@ nav .links ul li a:hover {
     }
 }
 
+#logout-icon {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+#logout-icon:hover {
+    color: var(--main-btn-hover);
+
+}
 
 /* end nav bar */
