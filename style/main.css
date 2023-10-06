@@ -268,9 +268,10 @@ section {
         margin: 2rem;
     }
 }
- .products-cards .products{
+
+.products-cards .products {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
 
@@ -283,36 +284,54 @@ section {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-    .products-cards  .products{
+    .products-cards .products {
 
         grid-template-columns: repeat(3, 1fr);
 
-    } 
+    }
 }
 
-.main-btn.login-btn{
+.main-btn.login-btn {
     color: var(--second-font-color);
     cursor: pointer;
 }
-.main-btn.login-btn:hover{
+
+.main-btn.login-btn:hover {
     color: var(--main-font-color);
 }
 
 @media only screen and (max-width: 992px) {
-    .main-btn.login-btn{
+    .main-btn.login-btn {
         color: var(--second-font-color);
         cursor: pointer;
     }
 }
 
-.icons-navbar{
+.icons-navbar {
     display: flex;
     align-items: center;
     text-align: center;
 }
+
 @media only screen and (max-width: 992px) {
-    .icons-navbar{
-       width: 100%;
+    .icons-navbar {
+        width: 100%;
     }
 }
+
+#successMessage {
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(9, 255, 0);
+    font-weight: 500;
+}
+
+#errorMessage {
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(190, 32, 32);
+    font-weight: 500;
+}
+
+
 /*end glopal rules */
