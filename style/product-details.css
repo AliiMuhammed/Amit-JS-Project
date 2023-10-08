@@ -28,6 +28,7 @@ body {
 .product-details-section img {
     width: 100%;
     display: block;
+    height: 100%;
 }
 
 .img-display {
@@ -44,7 +45,7 @@ body {
 @media only screen and (max-width: 767px) {
 
     .img-showcase {
-        
+
         height: auto;
     }
 }

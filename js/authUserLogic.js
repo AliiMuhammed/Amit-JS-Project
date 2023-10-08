@@ -14,3 +14,5 @@ logoutBtn.addEventListener("click", () => {
   // Navigate to index.html and reload the page
   window.location.assign("/Amit-JS-Project/index.html");
 });
+
+
