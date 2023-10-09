@@ -9,7 +9,7 @@
 }
 
 ::selection {
-    color: #fff;
+    color: white;
     background: var(--main-font-color);
 }
 
@@ -27,7 +27,7 @@ body {
 }
 
 body::selection {
-    color: #fff;
+    color: white;
     background-color: var(--main-font-color);
 }
 
@@ -73,7 +73,7 @@ a {
 }
 
 .main-btn {
-    background-color: #fff;
+    background-color: white;
     width: fit-content;
     padding: 1rem 3rem;
     border-radius: 7px;
@@ -127,7 +127,7 @@ section {
     display: none;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: white;
     cursor: pointer;
     transition: var(--main-transition);
     position: fixed;
@@ -191,7 +191,7 @@ section {
 .card .img-product a {
     width: 100%;
     background-color: #150e1fc5;
-    color: #fff;
+    color: white;
     text-align: center;
     padding: 0.6rem 1rem;
     text-transform: capitalize;
@@ -334,34 +334,40 @@ section {
 }
 
 .main-header {
-    margin-top: 7.3rem;
-    height: 40vh;
+    margin-top: 0rem;
+    height: 45vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-    color: #fff;
+    color: white;
     position: relative;
     background-image: url(../images/Home\ slider/6.jpg);
     background-position-x: 50%;
     background-position-y: 20%;
     background-size: cover;
+    background-attachment: fixed;
 }
-@media only screen and (max-width: 992px) {
+
+@media only screen and (max-width: 767px) {
     .main-header {
         font-size: 2rem;
     }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .main-header {
         font-size: 2.5rem;
     }
 }
+
+
+
 .main-header::after {
     content: "";
     position: absolute;
     opacity: .777;
-    background-image: linear-gradient(180deg, #584D66 0%, #150E1F 100%);
+    background-image: linear-gradient(180deg, #6e5094 0%, #150E1F 100%);
     width: 100%;
     height: 100%;
 
@@ -372,5 +378,11 @@ section {
     z-index: 100;
 }
 
+@media only screen and (max-width: 992px) {
+    .main-header h1 {
+        margin: 0;
+        margin-top: 3rem;
+    }
+}
 
 /*end glopal rules */

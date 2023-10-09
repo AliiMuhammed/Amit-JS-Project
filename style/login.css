@@ -48,7 +48,7 @@
     -moz-transition: var(--main-transition);
     -ms-transition: var(--main-transition);
     -o-transition: var(--main-transition);
-    background-color: #fff6;
+    background-color: white6;
     border-radius: 7px;
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
@@ -64,7 +64,7 @@
 }
 
 .login-section .container .login-form input:not(input[type="submit"])::placeholder {
-    color: #fff;
+    color: white;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
     -moz-transition: var(--main-transition);
@@ -74,7 +74,7 @@
 
 .login-section .container .login-form input:not(input[type="submit"]):focus {
     border-color: #ae70ff;
-    background-color: #fff;
+    background-color: white;
 }
 
 .login-section .container .login-form input:not(input[type="submit"]):focus::placeholder {
@@ -120,7 +120,7 @@
 }
 
 .login-section .container .login-form a {
-    color: #fff;
+    color: white;
     font-size: 1.5rem;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
@@ -130,5 +130,5 @@
 }
 
 .login-section .container .login-form a:hover {
-    color: #fff9;
+    color: white9;
 }

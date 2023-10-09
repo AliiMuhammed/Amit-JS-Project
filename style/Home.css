@@ -17,7 +17,7 @@
     height: 100%;
     background-color: transparent;
     opacity: .8;
-    background-image: linear-gradient(180deg, #584D66 0%, #150E1F 100%);
+    background-image: linear-gradient(180deg, #6e5094 0%, #150E1F 100%);
     top: 0;
     z-index: 100;
 }
@@ -37,7 +37,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    color: #fff;
+    color: white;
 }
 
 @media only screen and (max-width: 767px) {
@@ -178,7 +178,7 @@
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     font-size: 3rem;
-    color: #fff;
+    color: white;
     width: 100%;
     text-align: center;
 }
@@ -212,7 +212,7 @@
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     font-size: 3rem;
-    color: #fff;
+    color: white;
 }
 
 @media only screen and (max-width: 767px) {
@@ -254,7 +254,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #fff;
+    color: white;
     padding: 0 4rem;
 
 }
@@ -440,7 +440,7 @@
 .offer-sectoin .container .left .main-btn.offer-btn {
     margin: 1rem 0;
     background-color: var(--main-font-color);
-    color: #fff;
+    color: white;
 }
 
 .offer-sectoin .container .left .main-btn.offer-btn:hover {

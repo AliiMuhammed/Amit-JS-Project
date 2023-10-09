@@ -2,7 +2,7 @@
 footer {
     padding-top: 4rem;
     background-color: #150E1F;
-    color: #fff;
+    color: white;
 }
 
 footer .footer-top {
@@ -46,7 +46,7 @@ footer .footer-top .container .shop-collections-links a,
 footer .footer-top .container .fast-links a {
     margin-bottom: 1rem;
     font-size: 1.1rem;
-    color: #fff;
+    color: white;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
     -moz-transition: var(--main-transition);
@@ -64,7 +64,7 @@ footer .footer-top .container .fast-links a:hover {
 footer .footer-bottom {
     padding: 2rem 0;
     color: var(--second-font-color);
-    background-color: #fff;
+    background-color: white;
     margin-top: 2rem;
 
 
