@@ -3,8 +3,6 @@
     background-image: url(../images/products\ slider/4.jpg);
 }
 
-.contact-section {}
-
 .contact-section .container {
     display: flex;
     align-items: center;
@@ -15,7 +13,7 @@
 .contact-section .container .form-body {
     display: grid;
     grid-template-columns: 1.1fr 1fr;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 @media only screen and (max-width: 992px) {
@@ -101,11 +99,18 @@
 }
 
 .star {
-
     cursor: pointer;
     font-size: 24px;
     color: #ccc;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
 
+.star:hover {
+    color: var(--main-font-color);
 }
 
 .star.active {
@@ -131,6 +136,7 @@
     font-size: 1.2rem;
     height: 150px;
 }
+
 @media only screen and (max-width: 992px) {
     .contact-form textarea {
 
@@ -138,6 +144,7 @@
     }
 
 }
+
 .contact-form textarea::placeholder {
     color: white;
 }
@@ -148,6 +155,13 @@
     background-color: #8d3cff88;
 }
 
+.contact-form .error {
+    color: red;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    margin-bottom: 1.2rem;
+}
+
 .main-btn.contact-btn {
     border: none;
     background-color: var(--main-font-color);
@@ -155,16 +169,116 @@
     margin: 0 auto;
     cursor: pointer;
 }
+
 @media only screen and (max-width: 992px) {
     .main-btn.contact-btn {
-     margin-top: 2rem;
+        margin-top: 2rem;
     }
 
 }
-@media only screen and (max-width: 767px) {
-    .main-header {
-        font-size: 2rem;
-    }
-}
+
+
 /* end contact us form  */
 
+/* start feedback section */
+.feedback-section {
+    margin-top: 7rem;
+}
+
+.feedback-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .feedback-cards {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .feedback-cards {
+
+        grid-template-columns: 1fr
+    }
+}
+
+.feedback-cards .card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #412a61;
+    padding: 1rem;
+    color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+    .feedback-cards .card {
+        width: 85%;
+    }
+}
+
+.feedback-cards .card .top {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.feedback-cards .card .top .fLetter {
+    background-color: var(--main-font-color);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-transform: uppercase;
+}
+
+.feedback-cards .card .top .name-time {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+
+.feedback-cards .card .top .name-time .name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+@media only screen and (max-width: 767px) {
+    .feedback-cards .card .top .name-time .name {
+        font-size: 1.2rem;
+
+    }
+}
+
+
+.feedback-cards .card .bottom .rate {
+    margin-bottom: 1rem;
+}
+
+.feedback-cards .card .bottom .rate .star {
+    font-size: 1rem;
+    margin: 0 0.1rem;
+}
+
+/* end feedback section */
