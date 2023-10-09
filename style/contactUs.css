@@ -107,9 +107,10 @@
     -moz-transition: var(--main-transition);
     -ms-transition: var(--main-transition);
     -o-transition: var(--main-transition);
+    margin: 0 0.1rem;
 }
 
-.star:hover {
+.contact-form .rating  .star:hover {
     color: var(--main-font-color);
 }
 
@@ -278,7 +279,6 @@
 
 .feedback-cards .card .bottom .rate .star {
     font-size: 1rem;
-    margin: 0 0.1rem;
 }
 
 /* end feedback section */

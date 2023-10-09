@@ -109,24 +109,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const bottom = document.createElement("div");
     bottom.classList.add("bottom");
 
-    const rate = document.createElement("div");
-    rate.classList.add("rate");
+    // Create a div for displaying the stars
+    const starContainer = document.createElement("div");
+    starContainer.classList.add("rate");
 
     // Create and highlight stars based on the feedback's rating
-    for (let i = 0; i < feedback.rating; i++) {
+    for (let i = 0; i < 5; i++) {
       const starSpan = document.createElement("span");
-      starSpan.classList.add("star", "active");
+      starSpan.classList.add("star", i < feedback.rating ? "active" : "inactive");
       const starIcon = document.createElement("i");
       starIcon.classList.add("fas", "fa-star");
       starSpan.appendChild(starIcon);
-      rate.appendChild(starSpan);
+      starContainer.appendChild(starSpan);
     }
 
     const comment = document.createElement("div");
     comment.classList.add("comment");
     comment.textContent = feedback.feedbackMsg;
 
-    bottom.appendChild(rate);
+    bottom.appendChild(starContainer);
     bottom.appendChild(comment);
 
     card.appendChild(top);
