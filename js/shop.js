@@ -9,7 +9,7 @@ async function fetchProductsMens() {
     // Get a reference to the products-cards container
 
     const mainHeader = document.createElement("h1");
-    mainHeader.classList.add("main-header");
+    mainHeader.classList.add("main-heading");
     mainHeader.innerHTML = "men's shirts";
     mainHeader.id = "menShirts";
     const productsCardsContainer = document.querySelector(".products-cards");
@@ -58,7 +58,7 @@ async function fetchProductsMens() {
     // Get a reference to the products-cards container
 
     const mainHeader = document.createElement("h1");
-    mainHeader.classList.add("main-header");
+    mainHeader.classList.add("main-heading");
     mainHeader.innerHTML = "men's shoes";
     mainHeader.id = "menShoes";
     const productsCardsContainer = document.querySelector(".products-cards");
@@ -105,9 +105,9 @@ async function fetchProductsMens() {
     // Get a reference to the products-cards container
 
     const mainHeader = document.createElement("h1");
-    mainHeader.classList.add("main-header");
+    mainHeader.classList.add("main-heading");
     mainHeader.innerHTML = "men's watches";
-    mainHeader.id="menWatches"
+    mainHeader.id = "menWatches";
     const productsCardsContainer = document.querySelector(".products-cards");
 
     const productsContainer = document.createElement("div");
@@ -155,7 +155,7 @@ async function fetchProductsWomens() {
     // Get a reference to the products-cards container
 
     const mainHeader = document.createElement("h1");
-    mainHeader.classList.add("main-header");
+    mainHeader.classList.add("main-heading");
     mainHeader.innerHTML = "women's dresses";
     mainHeader.id = "womenDresses";
     const productsCardsContainer = document.querySelector(".products-cards");
@@ -203,7 +203,7 @@ async function fetchProductsWomens() {
     // Get a reference to the products-cards container
 
     const mainHeader = document.createElement("h1");
-    mainHeader.classList.add("main-header");
+    mainHeader.classList.add("main-heading");
     mainHeader.innerHTML = "women's shoes";
     const productsCardsContainer = document.querySelector(".products-cards");
 
@@ -249,7 +249,7 @@ async function fetchProductsWomens() {
     // Get a reference to the products-cards container
 
     const mainHeader = document.createElement("h1");
-    mainHeader.classList.add("main-header");
+    mainHeader.classList.add("main-heading");
     mainHeader.innerHTML = "women's jewellery";
     const productsCardsContainer = document.querySelector(".products-cards");
 
@@ -297,7 +297,7 @@ async function fetchSunglasses() {
     // Get a reference to the products-cards container
 
     const mainHeader = document.createElement("h1");
-    mainHeader.classList.add("main-header");
+    mainHeader.classList.add("main-heading");
     mainHeader.innerHTML = "sunglasses";
     mainHeader.id = "Sunglasses";
     const productsCardsContainer = document.querySelector(".products-cards");

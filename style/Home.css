@@ -497,7 +497,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .products-section .container .main-header {
+    .products-section .container .main-heading {
         font-size: 2rem;
         margin-bottom: 2rem;
     }
@@ -601,4 +601,3 @@
 }
 
 /* end features section */
-
