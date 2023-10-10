@@ -25,7 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
         productCategoryElement.textContent = `${product.category}`;
         productPriceElement.textContent = `Price: $${product.price}`;
         productRatingElement.textContent = `${product.rating}`;
-
+        // change tab title
+        document.title = `Brandstore | ${product.title}`;
         let sliderOne = document.querySelector(".img-display .img-showcase");
         let slideTwo = document.querySelector(".img-select");
 
@@ -52,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
           if (imgItem) {
             event.preventDefault();
             imgId = imgItem.querySelector("a").getAttribute("data-id");
-            
+
             slideImage();
           }
         });
