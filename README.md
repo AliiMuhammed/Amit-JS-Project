@@ -1,5 +1,6 @@
-
-<img src="https://github.com/AliiMuhammed/Amit-JS-Project/assets/93393629/14a0c5b5-8c47-4304-b8e6-b3ae0ca3dd34" alt="Large" width="400px"/>
+ <div style="text-align: center;">
+    <img src="https://github.com/AliiMuhammed/Amit-JS-Project/assets/93393629/14a0c5b5-8c47-4304-b8e6-b3ae0ca3dd34" alt="Large" width="400px"/>
+</div>
 
 #  Welcome to BrandStore 
 
