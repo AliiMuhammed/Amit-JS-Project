@@ -8,7 +8,7 @@ Welcome to BrandStore Your go-to for online fashion. Explore curated collections
 
 ## Features
 
-The Ahl Al-Quran website offers many features, such as:
+The BrandStore website offers many features, such as:
 
 - Show all products that fetched form API.
 - Show single products details.
